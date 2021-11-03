@@ -1,0 +1,49 @@
+POST http://localhost:2222/api/auth/register
+Content-Type: application/json
+
+
+{
+    "username": "quanglam",
+    "password": "123"
+}
+###
+
+POST http://localhost:2222/api/auth/login
+Content-Type: application/json
+
+
+{
+    "username": "quanglam",
+    "password": "123"
+}
+###
+
+POST http://localhost:2222/api/class
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ2ZWEyMGMzNDE0ODE2NThiNDUzYmQiLCJpYXQiOjE2MjUxMjYyNzV9.H0ZkK_PIZj_1NzxnRf4p2nauiVZeNwzY6m0PmArrKBA
+
+{
+   "name":"Vue24",
+   "topic" :"V345ue",
+    "room" :"V345ue",
+    "part" :"V345ue",
+    "invcode":""
+}
+
+###
+GET http://localhost:2222/api/class
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRkNzBiMDZlOWJkOTJkY2M5ZGE2MTYiLCJpYXQiOjE2MjUxMjY0ODJ9.mcH37ar4lewcXSwXrB19aEbsXMlbAUBYY9sLylbsCCg
+
+###
+PUT http://localhost:2222/api/class/60dd7578690d4c3a9c8d78a8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ2ZWEyMGMzNDE0ODE2NThiNDUzYmQiLCJpYXQiOjE2MjUxMzAwNzB9.tdLNfcTuSLdXHbxm1ZMNx759UdDsVz2125utoZnOzxE
+
+{
+   "name":"Vue2",
+   "description" :"Vue",
+   "invcode":"21sdfs",
+}
+###
+DELETE  http://localhost:2222/api/posts/60dd7578690d4c3a9c8d78a8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRkNzBiMDZlOWJkOTJkY2M5ZGE2MTYiLCJpYXQiOjE2MjUxMzE5MTh9.p36vHPU7vPmI9EsOXU1GgSYiBIrqUMUv6_QqKkwD-e0
